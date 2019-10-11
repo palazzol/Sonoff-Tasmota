@@ -11,5 +11,5 @@ Import("env")
 # pio >= 4.0.0
 env.Replace(UPLOADER="pio"+os.sep+"espupload.py")
 env.Replace(UPLOADERFLAGS="")
-env.Replace(UPLOADCMD="$UPLOADER -u $UPLOAD_PORT -f $SOURCES")
+env.Replace(UPLOADCMD="python $UPLOADER -u $UPLOAD_PORT -f $SOURCES")
 
